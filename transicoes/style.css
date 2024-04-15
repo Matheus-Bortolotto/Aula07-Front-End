@@ -1,0 +1,57 @@
+/* #grad{
+    background-image: linear-gradient(to left,red,yellow,orange);
+    display: inline-block;
+} */
+
+#grad{
+    background-image: radial-gradient(red,yellow,orange,black);
+}
+
+div.vazio{
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+    position: absolute;
+    left: 200px;
+    top: 150px;
+}
+
+div.transform{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    background-color: red;
+    /* transform: translate(10px, 20px); */
+    /* transform: rotate(30deg) scale(2,1); */
+    /* transform: skew(200deg, 150deg); */
+
+}
+
+div.transition{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transition: height 2s, width 1s, padding 3s, font-size 5s;
+}
+
+div.transition:hover{
+    height: 200px;
+    width: 200px;
+    padding: 200px;
+    background-color: cyan;
+    font-size: 100px;
+}
+
+input{
+    width: 100px;
+    height: 100px;
+    transition: all 2s  linear
+}
+
+input:focus{
+    width: 200px;
+    font-size: 24px;
+}
+
